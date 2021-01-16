@@ -197,7 +197,7 @@ public class ViewPagerBottomSheetBehavior<V extends View> extends CoordinatorLay
                 false));
         a.recycle();
         ViewConfiguration configuration = ViewConfiguration.get(context);
-        mMaximumVelocity = 3000;
+        mMaximumVelocity = 100;
         mMinimumVelocity = configuration.getScaledMinimumFlingVelocity();
     }
 
