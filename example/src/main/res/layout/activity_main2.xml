@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="#4084FF"
+    tools:context=".fragments.MainActivity2">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorBackgroundFloating"
+        android:elevation="16dp"
+        android:orientation="vertical"
+        app:behavior_peekHeight="?attr/actionBarSize"
+        app:layout_behavior="@string/view_pager_bottom_sheet_behavior">
+
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="500dp"></TextView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

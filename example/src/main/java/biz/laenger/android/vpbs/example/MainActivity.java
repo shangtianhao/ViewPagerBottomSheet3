@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         bottomSheetViewPager.setAdapter(sectionsPagerAdapter);
         bottomSheetTabLayout.setupWithViewPager(bottomSheetViewPager);
         BottomSheetUtils.setupViewPager(bottomSheetViewPager);
+
+
     }
 
     @Override
