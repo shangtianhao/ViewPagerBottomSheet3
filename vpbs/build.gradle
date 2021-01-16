@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+group = 'biz.laenger.android'
+archivesBaseName = 'vpbs'
+ext.title = 'ViewPagerBottomSheetBehavior'
+description = 'Android BottomSheetBehavior with ViewPager support'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion rootProject.targetSdkVersion
+        versionName '0.0.6'
+    }
+
+    buildTypes {
+        release {
+        }
+        debug {
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "com.android.support:design:${supportVersion}"
+}
