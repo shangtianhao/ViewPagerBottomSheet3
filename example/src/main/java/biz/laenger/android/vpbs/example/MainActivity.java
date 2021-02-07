@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
 
+
         setupMainViewPager();
         setupBottomSheet();
     }
