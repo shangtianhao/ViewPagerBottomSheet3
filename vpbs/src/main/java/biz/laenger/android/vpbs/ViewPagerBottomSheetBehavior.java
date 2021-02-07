@@ -197,8 +197,8 @@ public class ViewPagerBottomSheetBehavior<V extends View> extends CoordinatorLay
                 false));
         a.recycle();
         ViewConfiguration configuration = ViewConfiguration.get(context);
-        mMaximumVelocity = 100;
-        mMinimumVelocity = configuration.getScaledMinimumFlingVelocity();
+        mMaximumVelocity = 5;
+        mMinimumVelocity = 1;
     }
 
     @Override
@@ -394,7 +394,7 @@ public class ViewPagerBottomSheetBehavior<V extends View> extends CoordinatorLay
             return;
         }
 
-        mVelocityTracker.computeCurrentVelocity(1000, mMaximumVelocity);
+        mVelocityTracker.computeCurrentVelocity(5, mMaximumVelocity);
         float xVel = mVelocityTracker.getXVelocity(mActivePointerId);
         float yVel = mVelocityTracker.getYVelocity(mActivePointerId);
 
@@ -643,7 +643,7 @@ public class ViewPagerBottomSheetBehavior<V extends View> extends CoordinatorLay
     }
 
     private float getYVelocity() {
-        mVelocityTracker.computeCurrentVelocity(1000, mMaximumVelocity);
+        mVelocityTracker.computeCurrentVelocity(5, mMaximumVelocity);
         return mVelocityTracker.getYVelocity(mActivePointerId);
     }
 
