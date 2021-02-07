@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+        //创建了一个分支testBranch_03
         setupMainViewPager();
         setupBottomSheet();
     }
