@@ -16,19 +16,13 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.tabs)
-    TabLayout tabLayout;
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-    @BindView(R.id.viewpager)
-    ViewPager viewPager;
+    @BindView(R.id.tabs) TabLayout tabLayout;
+    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.viewpager) ViewPager viewPager;
 
-    @BindView(R.id.bottom_sheet_toolbar)
-    Toolbar bottomSheetToolbar;
-    @BindView(R.id.bottom_sheet_tabs)
-    TabLayout bottomSheetTabLayout;
-    @BindView(R.id.bottom_sheet_viewpager)
-    ViewPager bottomSheetViewPager;
+    @BindView(R.id.bottom_sheet_toolbar) Toolbar bottomSheetToolbar;
+    @BindView(R.id.bottom_sheet_tabs) TabLayout bottomSheetTabLayout;
+    @BindView(R.id.bottom_sheet_viewpager) ViewPager bottomSheetViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
+
+
+        //创建了一个分支testBranch_03
         setupMainViewPager();
         setupBottomSheet();
         /**
